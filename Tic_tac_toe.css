@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(29, 29, 29);
+    border: 10px solid white;
+}
+
+.heading{
+    text-align: center;
+    color: white;
+    padding-top: 0.5rem;
+    padding: 1.5rem;
+    padding-bottom: 2rem;
+    height: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 4rem;
+    padding-top: rem;
+}
+
+.game{
+    width: 100%;
+    height: 60%;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grids{
+    max-width: 50%;
+    height: 100%;
+    /* max-width: 40%; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn{
+    width: 112px;
+    height: 118px;
+    border-radius: 7px;
+    font-size: 4rem;
+    background-color: white;
+    color: black;
+}
+
+.rst{
+    display: flex;
+    justify-content: center;
+}
+
+.reset{
+    width: 7rem;
+    height: 4rem;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    border: 2px solid white;
+}
+
+.messContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-btn{
+    width: 10rem;
+    height: 4rem;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    border: 2px solid white;
+}
+
+#message{
+    color: white;
+    font-size: 5rem;
+}
+
+.hide{
+    display: none;
+}
