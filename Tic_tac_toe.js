@@ -22,6 +22,7 @@ const winPattern = [
 
 const resetGame = () => {
     turn0 = true;
+    count = 0;
     enableBoxes();
     messContainer.classList.add('hide');
     page1.classList.remove('hide');
@@ -66,6 +67,9 @@ const showWinner = (winner) => {
 }
 
 checkWinner = () => {
+
+    let winnerFound = false;
+
     for(let pattern of winPattern){
 
         let pos1Val = btns[pattern[0]].innerText;
@@ -75,11 +79,14 @@ checkWinner = () => {
         if(pos1Val != '' && pos1Val != '' && pos1Val != ''){
             if(pos1Val === pos2Val && pos2Val === pos3Val){
                 showWinner(pos1Val);
+                winnerFound = true;
+                return;
             }
         }
-        if(count==9 && pos1Val !== pos2Val && pos2Val !== pos3Val){
-            draw();
-        }
+    }
+    
+    if(count===9 && !winnerFound){
+        draw();
     }
 }
 
